@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/prepaire/static/css/main.e8c7ba49.css",
+    "main.js": "/prepaire/static/js/main.0529d0bd.js",
+    "static/js/787.86a7c6be.chunk.js": "/prepaire/static/js/787.86a7c6be.chunk.js",
+    "index.html": "/prepaire/index.html",
+    "main.e8c7ba49.css.map": "/prepaire/static/css/main.e8c7ba49.css.map",
+    "main.0529d0bd.js.map": "/prepaire/static/js/main.0529d0bd.js.map",
+    "787.86a7c6be.chunk.js.map": "/prepaire/static/js/787.86a7c6be.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8c7ba49.css",
+    "static/js/main.0529d0bd.js"
+  ]
+}
