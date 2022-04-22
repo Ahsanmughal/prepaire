@@ -1,0 +1,319 @@
+/* .dashboard-main {
+    background-color: #EEF0FA;
+    height: 100vh;
+} */
+.dashboard-page {
+    display: grid;
+    grid-template-columns: 6% 1fr;
+}
+.flex-child {
+    grid-column:1;
+}
+.sideNav {
+    background-color: #fff;
+    padding: 10px;
+    height: 120vh;
+}
+.align-vertical {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.sideNav ul li {
+    padding-bottom: 30px;
+    position: relative;
+}
+.sideNav ul li.active:before {
+    /* border-left: 2px solid; */
+    content:"";
+    height:35px;
+    display:block;
+    left:-26px;
+    top: -2px;
+    position:absolute;
+    border-left: 4px solid #8676FF;
+}
+
+.bottom-menu {
+    position: absolute;
+    bottom: -170px;
+}
+.bottom-menu .bell-icon {
+    padding-left: 10px;
+}
+.main{
+    grid-column:2;
+    /* float: left; */
+    width: 100%;
+    background-image: url('https://res.cloudinary.com/djpepozcx/image/upload/v1650530148/waves_iqpysc.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40% auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mainheading {
+    color: #383874;
+    font-size: 43px;
+    font-weight: 700;
+}
+
+.molecule-block  .molecule-label{
+    color: #383874;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.molecule-block  .molecule-value{
+    color: #383874;
+    font-size: 20px;
+    font-weight: 400;
+}
+.molecule-dropdown {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.molecule-list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.molecule-list .left {
+    padding-right: 0px; 
+}
+.molecule-list .right {
+    padding-left: 0px;
+}
+.eyebtn {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(188,192,223,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(188,192,223,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(188,192,223,0.75);
+    max-width: 40px;
+    margin: 0px auto;
+}
+.seebtn {
+    cursor: pointer;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #383874;
+    display: block;
+}
+
+
+.molecule-item {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    color: #383874;
+    box-shadow: 10px 10px 5px 0px rgba(188,192,223,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(188,192,223,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(188,192,223,0.75);
+}
+
+.bottom-row {
+    margin-top: 50px;
+}
+.drug-prop {
+    padding: 10px 30px 1px 30px;
+    background-color: #fff;
+}
+
+.drug-prop .table {
+    margin-top: 20px;
+} 
+.drug-prop .table tr {
+    position: relative;
+}
+.drug-prop .table .middle {
+    color: #9292C1;
+}
+.drug-prop .table .right {
+    padding: 0.75rem 0rem 0.75rem 0rem;
+}
+.drug-prop .table tr td {
+    color: #383874;
+    border-top: none;
+    font-size: 13px;
+    padding: 0.75rem 0.75rem 0.75rem 0rem;
+}
+.drug-prop .table tr td:first-child {
+    padding: 0.75rem 0.75rem 0.75rem 1rem;
+}
+.drug-prop .table .greendot {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #17D74D;
+    position: absolute;
+    left: 0px;
+    top: 14px;
+}
+.drug-prop .table .purpledot {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #AE2AFF;
+    position: absolute;
+    left: 0px;
+    top: 14px;
+}
+.drug-prop .table .bluedot {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #0050C9;
+    position: absolute;
+    left: 0px;
+    top: 14px;
+}
+
+.drug-prop .table .blackdot {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #001959;
+    position: absolute;
+    left: 0px;
+    top: 14px;
+}
+.drug-prop .table .creamdot {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #FF9898;
+    position: absolute;
+    left: 0px;
+    top: 14px;
+}
+.position-relative {
+    position: relative;
+}
+.drug-circle {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow:  0px 62.0562px 49.645px rgba(108, 73, 172, 0.07), 0px 25.9256px 20.7405px rgba(108, 73, 172, 0.0503198), 0px 13.8611px 11.0889px rgba(108, 73, 172, 0.0417275), 0px 7.7704px 6.21632px rgba(108, 73, 172, 0.035), 0px 4.1268px 3.30144px rgba(108, 73, 172, 0.0282725), 0px 1.71725px 1.3738px rgba(108, 73, 172, 0.0196802);;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+}
+.drug-circle-text{
+    position: absolute;
+    bottom: 23px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 14px;
+}
+.drug-circle-text .textt {
+    font-size: 13px;
+}
+.drug-circle-text .number {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.toggle-select-dropdown {
+    margin-top: 85px;
+}
+
+.toggle-select-dropdown-list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.toggle-select-dropdown-list-item {
+    /* margin-left: 20px; */
+    margin-bottom: 20px;
+    /* height: 40px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    color: #383874;
+    box-shadow: 10px 10px 5px 0px rgba(188,192,223,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(188,192,223,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(188,192,223,0.75);
+    position: relative;
+}
+.toggle-select-dropdown-list-item span {
+    position: absolute;
+    bottom: 19px;
+    left: 45px;
+}
+.toggle-select-dropdown-list .right{
+    padding-left: 0px; 
+} 
+.toggle-block-indigo {
+    height: 30px;
+    width: 30px;
+    border-radius: 11px;
+    background-color: #66C8FF;
+    display: inline-block;
+    padding: 4px;
+}
+
+.toggle-block-magento {
+    height: 30px;
+    width: 30px;
+    border-radius: 11px;
+    background-color: #C64EFF;
+    display: inline-block;
+    padding: 4px;
+}
+
+.toggle-block-purple {
+    height: 30px;
+    width: 30px;
+    border-radius: 11px;
+    background-color: #8676FF;
+    display: inline-block;
+    padding: 4px;
+}
+.css-1s2u09g-control {
+    border-width: 0px !important;
+    border-bottom: 1px solid #BEC7F6 !important;
+    border-radius: 0px !important;
+}
+
+.css-1okebmr-indicatorSeparator {
+    background-color: #fff !important;
+}
+#gradient-drug #a {
+    stop-color:#D17AE8;
+}
+#gradient-drug #b {
+    stop-color:#D17AE8
+}
+#gradient-drug #c {
+    stop-color:#FF90A5
+}
+#ellipse-drug {
+    fill:none;
+    stroke:url(#gradient-drug);
+    stroke-width:20;
+}
+
+.interaction {
+    color: #383874;
+    /* margin-top: 40px; */
+}
+
+.no-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.no-margin {
+    margin-left: 0px;
+    margin-right: 0px;
+}

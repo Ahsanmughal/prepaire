@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&display=swap');
+html{
+  height:100%;
+}
+body {
+  background-color: #EEF0FA;
+  height: 100vh;
+  color: #383874;;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  /* font-family: 'Montserrat'; */
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/**! 02. typography **/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font: inherit;
+}
+
+p {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+/**! ----- font Setting (size & line height, spacing etc) ---- **/
+.h1-font, h1 {
+  font-size: 2.125rem;
+  line-height: 1.35;
+}
+
+@media (min-width: 768px) {
+  .h1-font, h1 {
+    font-size: 3.75rem;
+    line-height: 1.2;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.h2-font, h2 {
+  font-size: 2.125rem;
+  line-height: 1.35;
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width: 768px) {
+  .h2-font, h2 {
+    font-size: 3rem;
+    line-height: 1.25;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.h3-font, h3{
+  font-size: 2.125rem;
+  line-height: 1.35;
+}
+
+.h4-font, h4 {
+  font-size: 1.75rem;
+  line-height: 1.4;
+}
+
+.h5-font, h5 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.h6-font, h6, .blockquote {
+  font-size: 1.125rem;
+  line-height: 1.9;
+}
+
+.lead {
+  font-size: 1.125rem;
+  line-height: 1.9;
+  font-weight: 600;
+}
+
+.body-font, p {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.font-size-14 {
+  font-size: 0.875rem;
+}
+
+.font-size-21 {
+  font-size: 1.3125rem;
+}
+
+.type--underline {
+  text-decoration: underline;
+}
+
+.type--fine-print {
+  font-size: 0.875rem;
+}
+
+.font-space-1 {
+  letter-spacing: 1.3px;
+}
+
+.bullet {
+  display: list-item;
+}
+
+.form + span.type--fine-print,
+.button-group + span.type--fine-print,
+.btn + span.type--fine-print {
+  margin-top: 0.8125rem;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
